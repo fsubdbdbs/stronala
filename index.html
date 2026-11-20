@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matura PP do pobrania</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600&display=swap">
+<style>
+/* layout: jedna wąska kolumna, cztery duże przyciski jeden pod drugim */
+:root{--bg:#f6f7fb;--fg:#1b2235;--muted:#5b6478;--card:#ffffff;--line:#d8dce8;--accent:#1f3864;--accent-fg:#ffffff;
+--display:"Space Grotesk",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151f;--fg:#e8ebf3;--muted:#9aa3b8;--card:#1a2030;--line:#2c3448;--accent:#8fb0ff;--accent-fg:#0d1220;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#11151f;--fg:#e8ebf3;--muted:#9aa3b8;--card:#1a2030;--line:#2c3448;--accent:#8fb0ff;--accent-fg:#0d1220;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5}
+main{max-width:560px;margin:0 auto;padding-block:40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+h1{font-family:var(--display);font-size:1.7rem;margin:0 0 4px;text-wrap:balance}
+p.lead{margin:0 0 10px;color:var(--muted)}
+h2{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 0;font-weight:600}
+.btn{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);text-decoration:none;font:inherit;font-weight:600;text-align:left;cursor:pointer;width:100%}
+.btn small{display:block;font-weight:400;color:var(--muted);font-size:.85rem}
+.btn .go{flex:none;color:var(--accent);font-size:.9rem}
+.btn.main{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.btn.main small,.btn.main .go{color:var(--accent-fg)}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+#msg{min-height:1.4em;margin:0;color:var(--muted);font-size:.9rem}
+footer{margin-top:18px;color:var(--muted);font-size:.8rem}
+</style>
+</head><body><main>
+  <h1>Matura podstawowa z matematyki</h1>
+  <p class="lead">Kliknij kafelek, żeby pobrać plik. Pierwszy kafelek to powtórka: wzory z karty i spoza karty, a pod nimi zadania z prawdziwych matur z rozwiązaniem krok po kroku. Trzy kafelki niżej otwierają próbne matury Operonu (listopad 2023, 2024 i 2025) do rozwiązania na próbę.</p>
+
+  <a class="btn main" href="powtorka.pdf" download="Matura_wzory_z_karty_i_spoza_karty.pdf">
+    <span>Powtórka: wzory z karty i spoza karty<small>PDF, 62 strony, zadania z rozwiązaniami</small></span><span class="go">Pobierz</span></a>
+  
+  <h2>Próbne matury Operon</h2>
+  <a class="btn" href="https://www.matemaks.pl/arkusze/arkusz-2025-listopad-operon-pp.pdf" target="_blank" rel="noopener">
+    <span>Operon, listopad 2025<small>arkusz PDF, 50 pkt, 180 min</small></span><span class="go">Otwórz</span></a>
+  <a class="btn" href="https://arkuszmaturalny.pl/wp-content/uploads/2024/12/matematyka-2024-operon-probna-podstawowa.pdf" target="_blank" rel="noopener">
+    <span>Operon, listopad 2024<small>arkusz PDF, 50 pkt, 180 min</small></span><span class="go">Otwórz</span></a>
+  <a class="btn" href="https://staff.uz.zgora.pl/jskowron/ZMNM/pliki/Matematyka-2023-operon-probna-podstawowa.pdf" target="_blank" rel="noopener">
+    <span>Operon, listopad 2023<small>arkusz PDF, 46 pkt, 180 min</small></span><span class="go">Otwórz</span></a>
+
+  <footer>Arkusze Operonu otwierają się ze stron, które je udostępniają.</footer>
+</main>
+
+</body></html>
